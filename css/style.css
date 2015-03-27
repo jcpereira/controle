@@ -1,0 +1,21 @@
+/* CSS Document */
+.buttons{
+    margin-top: 20px;    
+}
+.wrapper {
+    width: 600px;
+    margin: 20px auto;
+}
+
+.form-horizontal .control-label {
+    width: 50px;
+}
+
+.form-horizontal .controls {
+    margin-left: 60px;
+}
+
+#tb-controle .btn {
+    margin-right: 4px;
+}
+

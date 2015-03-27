@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Controle de contas</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <form id="fb-controle" class="form-horizontal" action="" method="POST">
+                <fieldset>
+                    <legend class="text-center">Controle de contas</legend>
+
+                    <div class="control-group">
+                        <label class="control-label" for="despesa">Despesa</label>
+                        <div class="controls">
+                            <input type="text" id="despesa" required="required" />
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="valor">Valor</label>
+                        <div class="controls">
+                            <input type="text" id="valor" required="required" />
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="tipo">Tipo</label>
+                        <div class="controls">
+                            <select id="tipo">
+                                <option value="Despesa da Casa">Despesa da Casa</option>
+                                <option value="Despesa do Escritório">Despesa do Escritório</option>
+                                <option value="Despesa do transporte">Despesa do transporte </option>
+                                <option value="Despesa de alimentação">Despesa de alimentação</option>
+                            </select>
+                        </div>
+                    </dsiv>
+
+                    <div class="buttons">
+                        <input type="submit" class="btn btn-primary" value="Save" />
+                        <input type="reset" class="btn" value="Cancel" />
+                    </div>					
+                </fieldset>
+            </form>
+
+            <table id="tb-controle" class="table table-bordered table-striped">
+                <caption>Controles</caption>
+                <thead>
+                    <tr>
+                        <th>Despesa</th>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="chart_div" style="width:500; height:200"></div>
+        </div>
+                    
+
+        <script type="text/javascript" src="js/ControleDAO.js"></script>
+        <script type="text/javascript" src="js/TableController.js"></script>
+        <script type="text/javascript" src="js/Index.js"></script>        
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="js/Relatorio.js"></script>
+        
+    </body>
+</html>
